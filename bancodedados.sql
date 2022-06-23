@@ -1,4 +1,5 @@
-create database pessoa;
+create database cadastro; -- Cria um banco de dados;
+drop database cadastro -- Exclui um banco de dados;
 
 create table pessoas (
     nome varchar(30),

@@ -45,7 +45,7 @@ INSERT INTO pessoas VALUES
 ('Valdenice', '1958-10-25', 'F', '51.3', '1.59', 'Venezuela');
 
 SELECT * FROM pessoas
--- Adicionando mais de um campo na tabela
+-- Adicionando mais de um campo na tabela , no final de cada um e no ultimo campo ;
 INSERT INTO pessoas 
 (id,nome,nascimento,sexo,peso,altura,nacionalidade)
 VALUES

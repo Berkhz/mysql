@@ -52,3 +52,5 @@ VALUES
 (DEFAULT, 'Ana', '2002-03-12', 'F', '77.7', '1.72', 'Inglaterra'),
 (DEFAULT, 'Marcos', '1998-07-07', 'M', '91.9', '1.95', 'Espanha'),
 (DEFAULT, 'Dolores', '1947-05-25', 'F', '60.4', '1.50', 'Brasil');
+
+SELECT * FROM pessoas;

@@ -76,3 +76,19 @@ MODIFY COLUMN profissao VARCHAR(20);
 -- Renomeando Coluna
 ALTER TABLE pessoas
 CHANGE COLUMN profissao prof VARCHAR(20);
+-- Mais uma tabela
+CREATE TABLE IF NOT EXISTS cursos (
+    nome VARCHAR(30) NOT NULL UNIQUE,
+    descricao TEXT,
+    carga INT UNSIGNED,
+    totaulas INT UNSIGNED,
+    ano YEAR DEFAULT '2022'
+) DEFAULT CHARSET = utf8;
+-- Adicionando Chave Primária 
+ALTER TABLE cursos
+ADD COLUMN idcurso INT FIRST;
+
+ALTER TABLE cursos
+ADD PRIMARY KEY(idcurso);
+-- Apagando a Tabela
+DROP TABLE cursos;

@@ -54,3 +54,25 @@ VALUES
 (DEFAULT, 'Dolores', '1947-05-25', 'F', '60.4', '1.50', 'Brasil');
 
 SELECT * FROM pessoas;
+
+-- Alterando a Estrutura da Tabela (ALTER TABLE e DROP TABLE)
+-- Adicionando uma nova Coluna
+ALTER TABLE pessoas
+ADD COLUMN profissao varchar(10);
+
+-- Removendo uma Coluna
+ALTER TABLE pessoas 
+DROP COLUMN profissao;
+
+-- Escolhendo a Posição da Coluna 
+ALTER TABLE pessoas
+ADD COLUMN profissao VARCHAR(10) AFTER nome;
+
+ALTER TABLE pessoas
+ADD COLUMN codigo INT FIRST;
+-- Modificando Definições
+ALTER TABLE pessoas
+MODIFY COLUMN profissao VARCHAR(20);
+-- Renomeando Coluna
+ALTER TABLE pessoas
+CHANGE COLUMN profissao prof VARCHAR(20);

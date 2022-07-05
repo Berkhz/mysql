@@ -132,3 +132,6 @@ WHERE idcurso = '8';
 DELETE FROM cursos
 WHERE ano = '2018'; -- Apaga todos os registro que foram feitos em 2018
 LIMIT 3; -- Limita o delete para apagar apenas 3 registro de 2018
+
+TRUNCATE cursos; -- Apaga todos os dados da tabela
+SELECT * FROM cursos;

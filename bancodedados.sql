@@ -110,3 +110,25 @@ SELECT * FROM cursos;
 UPDATE cursos
 SET nome = 'HTML5'
 WHERE idcurso = '1';
+
+SELECT * FROM cursos;
+
+UPDATE cursos
+SET nome = 'PHP', ano = '2015'
+WHERE idcurso = '4';
+
+SELECT * FROM cursos;
+
+UPDATE cursos
+SET nome = 'Java', carga = '40', ano = '2015'
+WHERE idcurso = '5'  
+LIMIT 1; -- Limita a modificação para um registro apenas
+
+SELECT * FROM cursos;
+-- Removendo uma linha
+DELETE FROM cursos
+WHERE idcurso = '8';
+
+DELETE FROM cursos
+WHERE ano = '2018'; -- Apaga todos os registro que foram feitos em 2018
+LIMIT 3; -- Limita o delete para apagar apenas 3 registro de 2018

@@ -12,7 +12,7 @@ CREATE TABLE pessoas ( -- Cria uma tabela no banco de dados
     nacionalidade VARCHAR(20) 
 );
 
-describe TABLE; 
+DESC TABLE; 
 
 -- Melhorando a Estrutura do Banco de Dados
 CREATE DATABASE cadastro
@@ -135,3 +135,10 @@ LIMIT 3; -- Limita o delete para apagar apenas 3 registro de 2018
 
 TRUNCATE cursos; -- Apaga todos os dados da tabela
 SELECT * FROM cursos;
+
+-- Gerenciando Cópias de Segurança
+USE cadastro;
+SELECT * FROM cursos;
+SELECT * FROM gafanhotos;
+DESC gafanhotos;
+DESC cursos;

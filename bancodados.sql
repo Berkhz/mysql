@@ -142,3 +142,9 @@ SELECT * FROM cursos;
 SELECT * FROM gafanhotos;
 DESC gafanhotos;
 DESC cursos;
+
+-- Gerenciando Cópias de Segurança MySQL 
+USE cadastro;
+SELECT * FROM cursos;
+DESC gafanhotos;
+DESC cursos;
